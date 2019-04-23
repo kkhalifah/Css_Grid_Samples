@@ -34,19 +34,16 @@ body {
     background-color: #DADAE3;
 }
 
-.header, .footer {
+/* Give every child element its grid name */
+.header {
+    grid-area: header;
     display: flex;
+    background-color: #648ca6;
     align-items: center;
     /*pushes content to far r and l instead of using float*/
     justify-content: space-between;
     padding: 0 16px;
     background-color: #648ca6;
-}
-
-/* Give every child element its grid name */
-.header {
-  grid-area: header;
-  background-color: #648ca6;
 }
 
 /* Make room for the menu icon on mobile */
@@ -70,6 +67,7 @@ body {
     transform: translateX(-245px);
     transition: all .6s ease-in-out;
 }
+
 /* The active class is toggled on hamburger and close icon clicks */
 .sidenav.active {
     transform: translateX(0);
@@ -155,7 +153,13 @@ body {
 
 .footer {
   grid-area: footer;
+  display: flex;
   background-color: #648ca6;
+    align-items: center;
+    /*pushes content to far r and l instead of using float*/
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: #648ca6;
 }
 
 /* Non-mobile styles for side nav responsiveness, 750px breakpoint */
